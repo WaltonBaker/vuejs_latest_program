@@ -13,7 +13,7 @@
         <el-form-item prop="username" label="用户名:" label-width="80px">
           <el-input
             v-model="login_Form.username"
-            prefix-icon="iconfont icon-tubiao211"
+            prefix-icon="iconfont icon-yonghuming"
           ></el-input>
         </el-form-item>
         <el-form-item prop="password" label="密码:" label-width="80px">
@@ -60,9 +60,9 @@ export default {
       // 对表单元素进行预检测
       this.$refs.loginFormRef.validate(async (validate, validate_obj) => {
         // 第一个参数表示校验是否通过
-        console.log(validate)
+        // console.log(validate)
         // 第二个参数表示未通过校验的字段
-        console.log(validate_obj)
+        // console.log(validate_obj)
         if (!validate) return
         const { data: res } = await this.$request({
           method: 'post',

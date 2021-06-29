@@ -8,7 +8,7 @@ import App from './App.vue'
 // 导入全局样式
 import './assets/css/global.css'
 // 导入阿里图标库的字体图标，使用font-class方式引入图标
-import './assets/font_4tzesc5rhds/iconfont.css'
+import './assets/font_80rsv2i4do/iconfont.css'
 
 Vue.config.productionTip = false;
 // 将封装的axios插件挂载到vue的原型上

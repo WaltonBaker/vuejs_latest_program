@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1624646178351') format('truetype');
+  src: url('iconfont.ttf?t=1624886660016') format('truetype');
 }
 
 .iconfont {
@@ -11,15 +11,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-tubiao211:before {
-  content: "\e61c";
+.icon-order:before {
+  content: "\e607";
 }
 
 .icon-icon-mima:before {
   content: "\e60c";
 }
 
+.icon-icons-:before {
+  content: "\e677";
+}
+
+.icon-shangpin:before {
+  content: "\e635";
+}
+
+.icon-ic_opt_feature:before {
+  content: "\e60f";
+}
+
 .icon-yonghuming:before {
   content: "\e63c";
+}
+
+.icon-shuju:before {
+  content: "\e6e1";
 }
 
