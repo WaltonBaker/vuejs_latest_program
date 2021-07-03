@@ -2,8 +2,10 @@ import Vue from 'vue'
 import router from './router'
 
 import { request } from './network/request'
-import './plugins/element.js'
 import App from './App.vue'
+
+import './plugins/element.js'
+import './plugins/vueTableWithTreeGrid.js'
 
 // 导入全局样式
 import './assets/css/global.css'

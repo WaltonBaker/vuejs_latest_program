@@ -92,7 +92,7 @@ export default {
     async getMenuList() {
       const { data: res } = await this.$request({ method: 'get', url: 'menus' })
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-      this.$message.success(res.meta.msg)
+      // this.$message.success(res.meta.msg)
       this.menulist = res.data
     },
     // 点击按钮，切换菜单的折叠和展开
@@ -101,7 +101,6 @@ export default {
     },
     // 保存当前导航组件的状态
     saveNavState(activePath) {
-      console.log(activePath)
       window.sessionStorage.setItem('activePath', activePath)
       this.activePath = activePath
     },
