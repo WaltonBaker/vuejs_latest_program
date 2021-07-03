@@ -1,6 +1,6 @@
 # 创建格式化代码的配置文件
-# 取消分号
-# 使用单引号
+# semi表示取消分号
+# singleQuote表示使用单引号
 {   
     "semi":false,
     "singleQuote":true
