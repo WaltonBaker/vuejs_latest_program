@@ -162,7 +162,7 @@ export default {
       //   指定级联选择器的配置对象
       cascaderProps: {
         expandTrigger: 'hover',
-        checkStrictly: true,
+        // checkStrictly: true,
         value: 'cat_id',
         label: 'cat_name',
         children: 'children'
