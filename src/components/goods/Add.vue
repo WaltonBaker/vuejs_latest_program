@@ -275,7 +275,7 @@ export default {
           method: 'post',
           data: form
         })
-        console.log(res)
+
         if (res.meta.status !== 201) {
           return this.$message.error('添加商品失败！')
         }
