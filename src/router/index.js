@@ -9,6 +9,7 @@ import Roles from '../components/power/Roles.vue'
 import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
 import List from '../components/goods/List.vue'
+import Add from '../components/goods/Add.vue'
 
 Vue.use(VueRouter)
 
@@ -61,8 +62,21 @@ const routes = [
       {
         path: '/goods',
         name: 'List',
-        component: List
+        component: List,
+        // 使用children属性添加子组件时,访问子组件时不需要拼接父组件的path
+        // 嵌套children属性时,在爷爷组件内添加router-view标签,孙子组件并不能在爷爷组件内渲染
+        // children: [{
+        //   path: '/add',
+        //   name: 'Add',
+        //   component: Add
+        // }]
       },
+      {
+        // 此处的path属性是一种假象,并没有嵌套路由,只是为了读者看起来结构清晰
+        path: '/goods/add',
+        name: 'Add',
+        component: Add
+      }
     ]
   },
 

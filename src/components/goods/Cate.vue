@@ -47,7 +47,7 @@
           <el-tag size="mini" type="warning" v-else>三级</el-tag>
         </template>
         <!-- 操作 -->
-        <template slot="opt" slot-scope="scope">
+        <template slot="opt">
           <el-button size="mini" icon="el-icon-edit" type="primary"
             >编辑</el-button
           >
@@ -230,7 +230,7 @@ export default {
           data: this.addCateForm
         })
         if (res.meta.status !== 201) {
-          this.$message.error('添加分类失败')
+          return this.$message.error('添加分类失败')
         }
         this.$message.success('添加分类成功')
         this.getCateList()
