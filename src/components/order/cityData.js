@@ -1,4 +1,4 @@
-let cityData = [
+const cityData = [
     {
         "name": "山东省",
         "id": "370000",
